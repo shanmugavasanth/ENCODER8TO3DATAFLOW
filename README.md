@@ -46,10 +46,24 @@ Developed by : Shanmuga Vasanth M
 
 RegisterNumber : 212223040191
 
+```
+module encoder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0=d1|d3|d5|d7;
+assign a1=d2|d3|d6|d7;
+assign a2=d4|d5|d6|d7;
+endmodule
+```
+
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+
+
 ![image](https://github.com/shanmugavasanth/ENCODER8TO3DATAFLOW/assets/144870621/85adbc2e-01d8-4719-a71a-e9ea26a79f9a)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+
 ![image](https://github.com/shanmugavasanth/ENCODER8TO3DATAFLOW/assets/144870621/864d9299-41c6-4e24-9791-968fb7098dd3)
 
 **RESULTS**
